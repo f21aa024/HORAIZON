@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/img/icon.png">
+
+    <title>HORAIZON</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   <!-- コンテンツ切り替え用スクロールjq -->
+  
+    <script src="/javascript/scroll_img.js"></script>   <!-- 上からの距離を測って色々できるやつ今はロゴを消している -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">    <!-- 画像のスライドを制御するcss -->
+
+</head>
+
+<body id="back">
+
+<!-- ロゴ -->
+<div id="splash">
+    <div id="splash_logo">
+    <svg version="1.1" id="mask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://
+    www.w3.org/1999/xlink" x="0px" y="0px" width="1856.5px" height="321.8px"
+    viewBox="0 0 1856.5 321.8" style="enable-background:new 0 0 1856.5 321.8;" xml:
+    space="preserve"><svg version="1.1" encoding="UTF-8" id="mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736.84 117.86"><defs><style>.b{fill:#fff;}.c{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:.89px;}</style></defs><g><path class="b" d="M0,102.55H12.14V27.73H0v-1.53H35.23v1.53h-12.14V63.5H59.51V27.73h-12.14v-1.53h35.23v1.53h-12.14V102.55h12.14v1.53H47.37v-1.53h12.14v-37.52H23.08v37.52h12.14v1.53H0v-1.53Z"/><path class="b" d="M125.24,63.39c0-5.83,1.15-11.23,3.45-16.19,2.3-4.96,5.25-9.26,8.86-12.91,3.61-3.65,7.67-6.51,12.2-8.59,4.52-2.08,9.04-3.12,13.57-3.12,4.81,0,9.5,1.04,14.06,3.12,4.56,2.08,8.62,4.94,12.2,8.59,3.57,3.65,6.44,7.95,8.59,12.91,2.15,4.96,3.23,10.36,3.23,16.19,0,5.11-.98,10.1-2.95,14.99-1.97,4.89-4.67,9.23-8.1,13.02-3.43,3.79-7.46,6.86-12.09,9.19-4.63,2.33-9.61,3.5-14.93,3.5s-10.54-1.13-15.21-3.39c-4.67-2.26-8.7-5.27-12.09-9.03-3.39-3.76-6.04-8.1-7.93-13.02-1.9-4.92-2.84-10.01-2.84-15.26Zm12.58,0c0,6.56,.44,12.29,1.31,17.17,.88,4.89,2.33,8.97,4.38,12.25,2.04,3.28,4.67,5.73,7.88,7.33,3.21,1.61,7.18,2.41,11.92,2.41s8.62-.8,11.87-2.41c3.24-1.6,5.89-4.05,7.93-7.33,2.04-3.28,3.5-7.37,4.38-12.25,.88-4.89,1.31-10.61,1.31-17.17,0-5.03-.33-9.9-.98-14.6-.66-4.7-1.91-8.9-3.77-12.58-1.86-3.68-4.45-6.62-7.77-8.81-3.32-2.19-7.64-3.28-12.96-3.28s-9.65,1.09-12.96,3.28c-3.32,2.19-5.91,5.12-7.77,8.81-1.86,3.68-3.12,7.88-3.77,12.58-.66,4.7-.98,9.57-.98,14.6Z"/></g><path class="b" d="M244.02,101.79h12.14V26.96h-12.14v-1.53h20.79c.88,0,1.75-.02,2.63-.05,.88-.04,1.75-.09,2.63-.16,.88,0,1.75-.02,2.63-.05,.88-.04,1.75-.05,2.63-.05,4.3,0,8.1,.24,11.38,.71,3.28,.48,6.34,1.84,9.19,4.1,2.55,1.97,4.36,4.19,5.42,6.67,1.06,2.48,1.59,4.81,1.59,7,0,1.09-.2,2.5-.6,4.21-.4,1.71-1.28,3.46-2.63,5.25-1.35,1.79-3.3,3.43-5.85,4.92-2.55,1.5-5.95,2.5-10.17,3.01v.22c1.17,.15,2.75,.42,4.76,.82,2,.4,4.05,1.08,6.13,2.02,2.08,.95,3.99,2.21,5.74,3.77,1.75,1.57,2.99,3.59,3.72,6.07,.44,1.46,.75,3.12,.93,4.98,.18,1.86,.33,3.77,.44,5.74,.11,1.97,.22,3.87,.33,5.69,.11,1.82,.31,3.36,.6,4.59,.44,1.9,1.13,3.61,2.08,5.14,.95,1.53,2.48,2.3,4.59,2.3,.95,0,1.93-.18,2.95-.55,1.02-.36,1.93-.95,2.73-1.75l.98,1.2c-.37,.29-.78,.6-1.26,.93-.48,.33-1.08,.64-1.8,.93-.73,.29-1.62,.53-2.68,.71-1.06,.18-2.35,.27-3.88,.27-2.92,0-5.34-.37-7.27-1.09-1.93-.73-3.48-1.81-4.65-3.23-1.17-1.42-2.02-3.17-2.57-5.25-.55-2.08-.93-4.5-1.15-7.27l-.77-9.95c-.29-3.65-1.02-6.49-2.19-8.53-1.17-2.04-2.54-3.54-4.1-4.48-1.57-.95-3.19-1.51-4.87-1.7-1.68-.18-3.14-.27-4.38-.27h-10.94v39.49h12.14v1.53h-35.23v-1.53Zm23.08-41.02h10.06c2.04,0,3.9-.25,5.58-.77,1.68-.51,3.12-1.4,4.32-2.68,1.2-1.28,2.13-3.01,2.79-5.2,.66-2.19,.98-4.96,.98-8.31,0-3.79-.49-6.84-1.48-9.13-.98-2.3-2.26-4.03-3.83-5.2-1.57-1.17-3.32-1.93-5.25-2.3-1.93-.36-3.85-.55-5.74-.55-1.31,0-2.64,.02-3.99,.05-1.35,.04-2.5,.13-3.45,.27V60.76Z"/><path class="b" d="M447.09,26.19h52.18l-45.84,76.36h24.07c3.65,0,6.45-.53,8.42-1.59,1.97-1.06,3.72-2.31,5.25-3.77,1.6-1.46,3.24-3.68,4.92-6.67,1.68-2.99,2.92-6.45,3.72-10.39h1.2v23.96h-60.5l45.62-76.36h-16.96c-5.91,0-10.5,1.55-13.78,4.65-3.28,3.1-5.65,7.38-7.11,12.85h-1.2V26.19Z"/><path class="b" d="M543.67,63.39c0-5.83,1.15-11.23,3.45-16.19,2.3-4.96,5.25-9.26,8.86-12.91,3.61-3.65,7.67-6.51,12.2-8.59,4.52-2.08,9.04-3.12,13.57-3.12,4.81,0,9.5,1.04,14.06,3.12,4.56,2.08,8.62,4.94,12.2,8.59,3.57,3.65,6.44,7.95,8.59,12.91,2.15,4.96,3.23,10.36,3.23,16.19,0,5.11-.98,10.1-2.95,14.99-1.97,4.89-4.67,9.23-8.1,13.02-3.43,3.79-7.46,6.86-12.09,9.19-4.63,2.33-9.61,3.5-14.93,3.5s-10.54-1.13-15.21-3.39c-4.67-2.26-8.7-5.27-12.09-9.03-3.39-3.76-6.04-8.1-7.93-13.02-1.9-4.92-2.84-10.01-2.84-15.26Zm12.58,0c0,6.56,.44,12.29,1.31,17.17,.88,4.89,2.33,8.97,4.38,12.25,2.04,3.28,4.67,5.73,7.88,7.33,3.21,1.61,7.18,2.41,11.92,2.41s8.62-.8,11.87-2.41c3.24-1.6,5.89-4.05,7.93-7.33,2.04-3.28,3.5-7.37,4.38-12.25,.88-4.89,1.31-10.61,1.31-17.17,0-5.03-.33-9.9-.98-14.6-.66-4.7-1.91-8.9-3.77-12.58-1.86-3.68-4.45-6.62-7.77-8.81-3.32-2.19-7.64-3.28-12.96-3.28s-9.65,1.09-12.96,3.28c-3.32,2.19-5.91,5.12-7.77,8.81-1.86,3.68-3.12,7.88-3.77,12.58-.66,4.7-.98,9.57-.98,14.6Z"/><path class="b" d="M662.45,101.02h12.14V26.19h-12.14v-1.53h23.41l36.98,59.62h.22V26.19h-12.14v-1.53h25.93v1.53h-12.14V104.08h-2.19l-46.06-73.4h-.22V101.02h12.14v1.53h-25.93v-1.53Z"/><path class="b" d="M380.38,99.27c-.33,.25-1.78,.29-2.32,.09,.47-.94,1.66-2.66,2.41-2.65,.07,.74,.25,2.32-.09,2.56h0Zm16.87,.84c-4.69-5.12-4.67-16.32-4.2-20.69,2.51-23.08,.08-45.78-2.1-49.91-.64-1.2,2.21-5.87-.97-15.42-.85-2.55-7.01-5.71-10.2-6.43-2.37-.54-9.71-8.38-13.32-7.6,2.42,1.35,8.91,9.03,8.89,10.38-.07,5.76,2.06,7.7,.92,8.53-11.38,8.39-14.01,27.31-14.01,35.06s.75,15.58,1.64,19.7c1.44,6.71,3.63,7.61,6.26,15.36,.49,1.44,1.56,9.96,1.99,10.88,.43,.92-3.84-.31-3.84,2.13,0,2.84,7.54,2.28,8.04,.5,2.28,1.35,7.85,2.79,8.82-1.99,.19-.93-.5-3.97,.92-3.77,1.42,.2,5.26,5.83,8.32,5.83s4.35-.91,2.84-2.56h0Z"/></g><line class="c" x1="3.49" y1="117.42" x2="733.35" y2="117.42"/></svg>このSVGタグの作り方は下記に記述
+    <!--/splash_logo--></div>
+
+    <!-- <div class="tyuui_text">
+    <p>このサイトは音楽が流れます。</p>
+    <p>注意してください</p>
+    </div> -->
+    
+    <!--/splash--></div>
+<!-- ロゴ終わり -->
+
+<!-- 音楽設定 -->
+<!-- <div id="splash2">
+    <div id="splash_text">
+        <p id="top_p">このサイトは音楽が流れます。</p>
+        <input type="button" value="ON" class="on" onclick="OnButtonClick();OnMusic();">
+        |
+        <input type="button" value="OFF" class="off active" onclick="OnButtonClick();OffMusic();">
+
+          </div>
+    </div>
+</div>
+<script src="javascript/OnButton.js"></script> -->
+<!-- 音楽設定終わり -->
+
+<audio src="img/media.io_c4efe984a7e14c73b55697b8c39b8596.mp3" autoplay loop>
+    あなたのブラウザーは <code>audio</code>要素をサポートしていません。
+  </audio>
+
+
+<!-- 背景動画 -->
+        <div id="video-area" class="video-area">
+        <video id="video" poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+        <!--
+        poster：動画ファイルが利用できない環境で代替表示される画像
+        webkit-playsinline：iOS 9までのSafari用インライン再生指定
+        playsinline：iOS 10以降のSafari用インライン再生指定
+        muted：音声をミュートさせる
+        autoplay：動画を自動再生させる
+        loop：動画をループさせる
+        controls：コントロールバーを表示する
+        -->
+        <source src="/img/シーケンス 01.mp4" type="video/mp4" class="video-mp4">
+        <source src="/img/シーケンス 01.ogv" type="video/ogv" class="video-ogv">
+        <source src="/img/シーケンス 01.webm" type="video/webm" class="video-webm">
+        <p>動画を再生できる環境ではありません。</p>
+        </video>
+        <!--/video-area-->
+    
+        </div>
+<!-- 背景動画終わり -->
+
+        
+    
+<div class="main_block">
+    <div class="main">
+        
+        <!-- <header id="header">
+            <h1>Header</h1>
+            </header>
+               -->
+
+        <p class="scroll_num" id="output">0</p>
+
+        <div class="item1">
+            <div id="box1" class="box" data-section-name="Top">
+                <img class="header_logo" id="header_logo" src="/img/ LOGO.png" alt="HORAIZON" width="50%">
+              </div>
+            <section id="box2" class="box" data-section-name="About">
+                <h3>About</h3>
+                <h1>Trust and Track record</h1>
+                <ul class="slider">
+                    <li><img src="img/about_img1.jpg" alt=""></li>
+                    <li><img src="img/about_img2.jpg" alt=""></li>
+                    <li><img src="img/about_img3.jpg" alt=""></li>
+                    <li><img src="img/about_img4.jpg" alt=""></li>
+                    <li><img src="img/about_img5.jpg" alt=""></li>
+                    <li><img src="img/about_img6.jpg" alt=""></li>
+                    <!--/slider--></ul>
+                <div class="text_consept1">    
+                    <p><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
+                        当社は常に<strong>イノベーション</strong>を追求し、IT分野の先駆者としての展望を持ちます。
+                        顧客の期待を超えるサービスを提供し、ウェブサイトの未来を拓くことに情熱を注ぎます。
+                    </span></span></p>
+                </div>
+              <!--/box--></section>
+              
+              <section id="box3" class="box" data-section-name="Consept">
+                <h3>Consept</h3>
+                <div class="back_ani">
+                    <div class="back_ani_text1">
+                    Our company values the partnership of 
+                    walking together with our customers,
+                    as indicated by the word Sprechkol.
+                     </div>
+                     <div class="back_ani_text2">
+                    We promise to fully understand our customers' 
+                    needs and provide services that cater to them.
+                    </div>
+                </div>
+                <h1>Sprechkol</h1>
+                <h2>唱和という新しい形の課題解決の形</h2>
+                <div class="text_consept2">
+                    <p><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
+                        　当社は、唱和という言葉が示すように、
+                        お客様と共に歩むパートナーシップを大切にしています。  
+                        私たちは、お客様のニーズを十分に理解し、   
+                        それに対応するサービスを提供することをお約束します。
+                    </span></span></p>
+                    <p>　</p> 
+                    <p><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
+                        　唱和の精神は、常にコミュニケーションを重視し、
+                        お客様の声に耳を傾けることにあります。
+                    </span></span></p>
+                    <p>　</p>
+                    <p><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
+                        　私たちは、お客様が抱える問題や課題に対して、
+                        真摯に向き合い、最適な解決策を
+                        提供することを目指しています。
+                    </span></span></p>
+                    <p>　</p>
+                    <p><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
+                    　私たちのコンセプトである唱和を実践することで、
+                    お客様と共に成長し、互いに信頼できる関係を
+                    築くことができます。
+                    </span></span></p>
+                </div>   
+                
+                </section>
+              
+              <section id="box4" class="box" data-section-name="Service">
+                <h3>Service</h3>
+                <h2>【WEBデザイン制作】</h2>
+                <p><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
+                お客様からのご要望に応じて、
+                オリジナルのWEBサイトを制作します。
+                デザインからコーディングまで、
+                一貫した制作プロセスで、
+                お客様に最適なWEBサイトを提供します。
+                </span></span></p>
+                <img class="service_img" src="img/パソコン.png" alt="ノートパソコンの画像" width="250px">
+                <h2>【WEBサイトリニューアル】</h2>
+                <p><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
+                時代に合わせたWEBサイトにリニューアルいたします。
+                レスポンシブデザインやSEO対策、
+                CMS導入など、機能も充実させ、
+                より魅力的なWEBサイトに生まれ変わらせます。
+                お客様のビジネスに合わせて、ご提案いたします。
+                </span></span></p>
+                <img class="service_img" src="img/スマホ.png" alt="スマホの画像" width="250px">
+              <!--/box--></section>
+              
+              <section id="box5" class="box" data-section-name="Person">
+                <h3>Person</h3>
+                <h2>人材を大切に。</h2>
+                <h2>採用から育成、キャリアアップまで、
+                    社員一人ひとりの成長に注力。</h2>
+                <img src="img/26101027_m.png" alt="社員の写真" width="100%">
+
+                <p><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
+                1.私たちは人材を大切にしています。
+                私たちの成功は、チームメンバーの才能と貢献に支えられています。
+                私たちは、個々の強みを認識し、それを最大限に生かすための環境を提供しています。
+                </span></span></p>
+                <p><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
+                2.私たちは、公正で透明性のある評価と報酬システムを採用しています。
+                能力と成果に基づいて、公平な扱いと認識を受けることができます。
+                また、コミュニケーションと協力を重視し、
+                オープンな雰囲気の中でお互いに助け合いながら働くことができます。
+                </span></span></p>
+                
+              <!--/box--></section>
+             </div> 
+        </div>
+    </div> 
+    <footer class="footer" id="footer">
+        <div class="chuo_img">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6429.218588889751!2d139.01165953277498!3d36.32178038004992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601e929bd6255555%3A0xea0056487ca37123!2z5Lit5aSu5oOF5aCx5aSn5a2m5qCh!5e0!3m2!1sja!2sjp!4v1584459328795!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%"></iframe>  
+        </div>
+            <ul class="chuo_link">
+                    <li>〒370-0841<br>群馬県高崎市栄町13-2</li>
+                    <li>TEL: 027-324-8511</li>
+                    <li>E-Mail: cid@chuo.ac.jp</li>
+                    <li>営業時間 09:00〜17:30（土曜日曜定休）</li>
+                    <li>※都合により休業する場合がございます</li>
+            </ul>
+    </footer>
+    <!------------- コンテンツごとに区切ってスクロールするためのjs -------------->
+    <script src="/javascript/scrollchenge.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/js/6-1.js"></script>
+    <!------------- ローディングアニメーションのjs ------------------>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+    <script src="javascript/loading.js"></script>
+    <!-------------- テキストのアニメーション ------------------------>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/javascript/text_ani.js"></script>
+    <!--------------- 画像のスライドを実現するためのjs ------------------->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="javascript/img_slider.js"></script>
+</body>  
+</body>
+</html>
